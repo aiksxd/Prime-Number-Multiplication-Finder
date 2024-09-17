@@ -6,7 +6,7 @@ the way of finding prime number which use scalar multiplication for checking pri
 fn(half_of_maxNumber, accuracy)
 `
 accuracy: 0.0 ~ 1.0
-it is 2~10 times slower than Euler's Sieve during maxNumber 1000~2000.
+it is 2-10 times slower than Euler's Sieve during maxNumber 1000-2000.
 
 # content:
 
