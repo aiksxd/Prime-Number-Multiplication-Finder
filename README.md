@@ -3,7 +3,7 @@ the way of finding prime number which use scalar multiplication for checking pri
 
 # usage:
 `
-fn(half_of_maxNumber, accuracy)
+fn(half_of_maxNumber)
 `
 + half_of_maxNumber: signless integer
 > it is 2-10 times slower than Euler's Sieve during maxNumber 1000-2000.
