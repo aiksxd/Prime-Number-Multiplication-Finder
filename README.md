@@ -6,7 +6,6 @@ the way of finding prime number which use scalar multiplication for checking pri
 fn(half_of_maxNumber, accuracy)
 `
 + half_of_maxNumber: signless integer
-+ accuracy: 0 ~ 1 (default:0.4, 1 means won't wrong in any number)
 > it is 2-10 times slower than Euler's Sieve during maxNumber 1000-2000.
 
 # content:
@@ -14,10 +13,10 @@ fn(half_of_maxNumber, accuracy)
 ```python
 import time
 
-def fn(n, c):
+def fn(n):
 	t = 1;
 	i = 1;
-	limit = int(c*n);
+	limit = int(0.34*n) +1;
 	result = [];
 	result.append(2);
 	while i < limit:
@@ -36,7 +35,7 @@ def fn(n, c):
 	return result;
 
 start = time.time();
-result = fn(500, 0.4);
+result = fn(500);
 end = time.time();
 run = end - start;
 print(result);
