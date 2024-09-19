@@ -1,9 +1,9 @@
 import time
 
-def fn(n, c):
+def fn(n):
 	t = 1;
 	i = 1;
-	limit = int(c*n);
+	limit = int(0.34*n) +1;
 	result = [];
 	result.append(2);
 	while i < limit:
@@ -22,7 +22,7 @@ def fn(n, c):
 	return result;
 
 start = time.time();
-result = fn(500, 0.4);
+result = fn(500);
 end = time.time();
 run = end - start;
 print(result);
